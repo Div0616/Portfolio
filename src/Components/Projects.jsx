@@ -10,18 +10,18 @@ const projects = [
     description:
       "A premium dark-themed portfolio with loader, blur navbar, interactive sections, and smooth UI animations.",
     tech: ["React", "CSS", "Framer Motion"],
-    live: "https://example.com",
-    github: "https://github.com/example",
+    live: "https://div0616.github.io/Portfolio/",
+    github: "https://div0616.github.io/Portfolio/",
   },
   {
     id: 2,
     title: "E-Commerce",
     featured: false,
     description:
-      "Modern e-commerce UI with clean product layout, responsive design, and scalable component structure.",
+      "Modern e-commerce UI with clean product layout, responsive design, and scalable component structure. //Currently Working// ",
     tech: ["React", "CSS", "REST API"],
-    live: "https://example.com",
-    github: "https://github.com/example",
+    live: "",
+    github: "",
   },
   {
     id: 3,
@@ -30,8 +30,8 @@ const projects = [
     description:
       "Prototype for detecting abnormal crowd activity using motion + density logic on CCTV frames (rules-based).",
     tech: ["Python", "OpenCV", "Numpy"],
-    live: "https://example.com",
-    github: "https://github.com/example",
+    live: "",
+    github: "",
   },
   {
     id: 4,
@@ -40,8 +40,8 @@ const projects = [
     description:
       "Clean dashboard layout with structured cards and scalable sections for metrics and future charts.",
     tech: ["React", "UI Design"],
-    live: "https://example.com",
-    github: "https://github.com/example",
+    live: "",
+    github: "",
   },
   {
     id: 5,
