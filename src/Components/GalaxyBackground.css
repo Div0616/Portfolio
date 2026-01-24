@@ -1,0 +1,82 @@
+.galaxy-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* stars */
+.stars-layer {
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  opacity: 0.35;
+  animation: starMove 60s linear infinite;
+}
+
+.stars-1 {
+  background-image: radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.9) 50%, transparent 55%),
+                    radial-gradient(1px 1px at 120px 90px, rgba(255,255,255,0.6) 50%, transparent 55%),
+                    radial-gradient(1px 1px at 260px 160px, rgba(255,255,255,0.5) 50%, transparent 55%);
+  background-size: 280px 200px;
+}
+
+.stars-2 {
+  opacity: 0.25;
+  background-image: radial-gradient(1px 1px at 40px 70px, rgba(56,189,248,0.8) 50%, transparent 55%),
+                    radial-gradient(1px 1px at 200px 120px, rgba(99,102,241,0.6) 50%, transparent 55%),
+                    radial-gradient(2px 2px at 320px 240px, rgba(255,255,255,0.6) 50%, transparent 55%);
+  background-size: 360px 280px;
+  animation-duration: 90s;
+}
+
+.stars-3 {
+  opacity: 0.18;
+  background-image: radial-gradient(1px 1px at 80px 40px, rgba(255,255,255,0.8) 50%, transparent 55%),
+                    radial-gradient(1px 1px at 180px 180px, rgba(255,255,255,0.4) 50%, transparent 55%),
+                    radial-gradient(2px 2px at 340px 80px, rgba(56,189,248,0.5) 50%, transparent 55%);
+  background-size: 420px 320px;
+  animation-duration: 130s;
+}
+
+@keyframes starMove {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+
+/* nebula glow blobs */
+.nebula {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(160px);
+  opacity: 0.35;
+  animation: nebulaFloat 6s ease-in-out infinite alternate;
+}
+
+.nebula-1 {
+  top: -200px;
+  left: -200px;
+  background: rgba(56, 189, 248, 0.75);
+}
+
+.nebula-2 {
+  bottom: -220px;
+  right: -220px;
+  background: rgba(99, 102, 241, 0.75);
+  animation-delay: 0.8s;
+}
+
+@keyframes nebulaFloat {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(60px, 40px);
+  }
+}
