@@ -50,12 +50,11 @@ const projects = [
     description:
       "Clean dashboard layout with structured cards and scalable sections for metrics and future charts.",
     tech: ["React", "UI Design"],
-    live: "quickpure.in",
+    live: "https://quickpure.in/",
     github: "https://github.com/example",
   },
 ];
 
-// ✅ Auto-fix URL (so "quickpure.in" becomes "https://quickpure.in")
 const normalizeUrl = (url) => {
   if (!url) return "#";
   if (url.startsWith("http://") || url.startsWith("https://")) return url;
@@ -75,7 +74,6 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <div className="projects-container">
-        {/* Header */}
         <div className="projects-header">
           <p className="projects-tag">Projects</p>
           <h2 className="projects-title">My Work</h2>
@@ -85,7 +83,6 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Filters */}
         <div className="projects-filters">
           {filters.map((f) => (
             <button
@@ -98,7 +95,6 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* List */}
         <div className="projects-timeline">
           <div className="timeline-line"></div>
 

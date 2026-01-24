@@ -317,3 +317,50 @@
   border-radius: 12px;
   font-size: 12.5px;
 }
+/* Timeline line should NEVER block clicks */
+.timeline-line {
+  pointer-events: none;
+}
+
+/* Make sure project card stays above any overlay */
+.project-row {
+  position: relative;
+  z-index: 2;
+}
+
+/* Make sure buttons are always clickable */
+.project-right {
+  position: relative;
+  z-index: 5;
+}
+
+.project-btn {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+/* FINAL CLICK FIX */
+.timeline-line {
+  pointer-events: none;
+}
+
+.row-glow {
+  pointer-events: none;
+}
+
+.project-row {
+  position: relative;
+  z-index: 2;
+}
+
+.project-left,
+.project-right {
+  position: relative;
+  z-index: 2;
+}
+
+.project-btn {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
